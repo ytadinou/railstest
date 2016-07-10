@@ -1,0 +1,38 @@
+
+<h1 class="pg_title">DETAIL COMMERCE</h1>
+<hr/>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <!--<strong>Photo:</strong> -->
+  <!--<%= @commerce.photo %>-->
+  <img src="<%= @commerce.photo %>" class="img-rounded" alt="Missing photo" width="400" height="300" >
+
+</p>
+
+<p>
+  <strong>Nom:</strong>
+  <%= @commerce.nom %>
+</p>
+
+<p>
+  <strong>Activite:</strong>
+  <%= @commerce.activite %>
+</p>
+
+<p>
+  <strong>Adresse:</strong>
+  <%= @commerce.adresse %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @commerce.description %>
+</p>
+
+
+<!--<%= link_to 'Edit', edit_commerce_path(@commerce) %> | -->
+<!-- <%= link_to 'RETOUR', commerces_path %> -->
+
+<hr/>
+<%= link_to "RETOUR", commerces_path, class: "btn btn-lg btn-default" %>

@@ -1,0 +1,10 @@
+<h1 class="pg_title">EDITION DU COMMERCE</h1>
+<hr/>
+<%= render 'form' %>
+
+<!--<%= link_to 'Show', @commerce %> | -->
+<!--<%= link_to 'Back', commerces_path %> -->
+<p><%= link_to "ANNULER", @commerce, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-xs btn-default" %></p>
+
+<hr/>
+<p><%= link_to "RETOUR", commerces_path, class: "btn btn-md btn-default" %></p>

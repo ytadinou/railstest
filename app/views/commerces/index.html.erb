@@ -1,0 +1,33 @@
+<h1 class="pg_title">MES COMMERCES</h1>
+
+<hr/>
+
+<p id="notice"><%= notice %></p>
+
+  <% for commerce in @commerces %>
+
+  <div class="row">
+  <div class="col-sm-4">
+
+  <p><img src= "<%= commerce.photo %>"  class="img-circle" alt="Missing photo" width="304" height="236"></p>
+
+   </div>
+   <div class="col-sm-4">
+
+     <p><%= commerce.nom %></p>
+     <p><%= commerce.activite %></p>
+     <p><%= commerce.adresse %></p>
+     <p><%= link_to 'Voir plus ...', commerce %></p>
+
+   </div>
+   <div class="col-sm-4">
+
+     <p><%= link_to 'Editer', edit_commerce_path(commerce) %></p>
+
+   </div>
+ </div>
+
+<% end %>
+<hr/>
+
+<%= link_to "CREER UN COMMERCE", new_commerce_path, class: "btn btn-lg btn-default" %>
